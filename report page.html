@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Programme</title>
+    <link rel="stylesheet" href="programmestyle.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Poppins&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- accordion -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <title>REPORT</title>
+    <style>
+        
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <!-- Logo Image in the Navigation Bar (Now on the leftmost) -->
+        <div class="navbar">
+            <a href="#">
+                <img src="images/mahallah asma logo.png" alt="Logo" width="40" height="40">
+            </a>
+            <a href="#home">Home</a>
+            <a href="#announcement">Announcement</a>
+            <div class="dropdown">
+                <a href="./programmepage.html" class="dropbtn">Programme 
+                <i class="fa fa-caret-down"></i>
+                </a>
+                <div class="dropdown-content">
+                <a href="">Student Programme</a>
+                <a href="#MahallahCamping">Mahallah Campaign</a>
+                <a href="#Awards">Awards</a>
+                </div>
+            </div> 
+            <a href="./contact page.html">Contact Us</a>
+            <a href="">Report</a>
+        </div>
+    </nav>
+
+    <header>
+        <h1>REPORT</h1>
+    </header>
+
+    <section class="complaint-section">
+        <h2>ONLINE MAHALLAH MAINTENANCE COMPLAINT</h2>
+
+        <div class="logo-container">
+            <img src="images/maintenance logo 2.jpg" alt="Maintenance Logo" class="profile-image">
+            <img src="images/iium logo.jpg" alt="IIUM Logo" class="profile-image">
+        </div>
+
+        <img src="images/link logo.png" alt="Additional Logo" class="additional-logo">
+        <a href="bit.ly/mahallahmaintenance">bit.ly/mahallahmaintenance</a>
+        <p>Click the link to place your complaint.</p>
+
+        <img src="images/call logo.png" alt="Additional Logo" class="additional-logo">
+        <p>03-6421 2169</p>
+        <p>&NonBreakingSpace;</p>
+        <p>&NonBreakingSpace;</p>
+        <p>&NonBreakingSpace;</p>
+        <p>&NonBreakingSpace;</p>
+    </section>
+
+    <!-- WiFi Complaint Section -->
+    <section class="wifi-complaint-section">
+        <h2>WIFI COMPLAINT</h2>
+
+        <div class="logo-container">
+            <img src="images/wifi logo.png" alt="WiFi Logo" class="profile-image">
+            <img src="images/iium logo.jpg" alt="IIUM Logo" class="profile-image">
+        </div>
+
+        <img src="images/link logo.png" alt="Additional Logo" class="additional-logo">
+        <a href="#">https://wifisupport.iium.edu.my/support/login</a>
+        <p>Click the link to report WiFi issues.</p>
+        <p>&NonBreakingSpace;</p>
+        <p>&NonBreakingSpace;</p>
+        <p>&NonBreakingSpace;</p>
+        <p>&NonBreakingSpace;</p>
+       
+    </section>
+
+    <!-- Washing Machine Report Section -->
+    <section class="washing-machine-section">
+        <h2>WASHING MACHINE REPORT</h2>
+
+        <div class="logo-container">
+            <img src="images/washing machine logo.jpg" alt="Washing Machine Logo" class="profile-image">
+            <img src="images/iium logo.jpg" alt="IIUM Logo" class="profile-image">
+        </div>
+
+        <img src="images/link logo.png" alt="Additional Logo" class="additional-logo">
+        <a href="#">bit.ly/mahallahmaintenance</a>
+        <p>Click the link to report issues with washing machines.</p>
+        <p>&NonBreakingSpace;</p>
+        <p>&NonBreakingSpace;</p>
+        <p>&NonBreakingSpace;</p>
+        <p>&NonBreakingSpace;</p>
+       
+    </section>
+
+    <footer id="page-footer">
+        <p>SOCIAL MEDIA</p>
+        <img src="images/ig logo.png" width="40" height="30" class="footer image">
+        <img src="images/x logo.png" width="40" height="30" class="footer image">
+        <p>copyright&copy; 2023 Mahallah Asma</p>
+    </footer>
+
+    <script>
+        // JavaScript to toggle the visibility of the footer when scrolling to the bottom
+        window.addEventListener('scroll', function () {
+            var scrollPosition = window.scrollY + window.innerHeight;
+            var pageHeight = document.documentElement.scrollHeight;
+
+            if (scrollPosition >= pageHeight - 10) {
+                document.getElementById('page-footer').style.display = 'block';
+            } else {
+                document.getElementById('page-footer').style.display = 'none';
+            }
+        });
+    </script>
+
+</body>
+
+</html>

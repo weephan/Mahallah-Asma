@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Programme</title>
+    <link rel="stylesheet" href="programmestyle.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Poppins&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- accordion -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $("#accordion").accordion({collapsible : true, active : 'none'});
+        });
+
+        // for button to toggle hide and show
+        function show(shown, hidden) {
+        document.getElementById(shown).style.display='block';
+        document.getElementById(hidden).style.display='none';
+        return false;
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <nav>
+        <!-- Logo Image in the Navigation Bar (Now on the leftmost) -->
+        <div class="navbar">
+            <a href="#">
+                <img src="images/mahallah asma logo.png" alt="Logo" width="40" height="40">
+            </a>
+            <a href="#home">Home</a>
+            <a href="#announcement">Announcement</a>
+            <div class="dropdown">
+                <a href="" class="dropbtn">Programme</a>
+                <div class="dropdown-content">
+                <a href="#programme">Student Programme</a>
+                <a href="#MahallahCamping">Mahallah Campaign</a>
+                <a href="#Awards">Awards</a>
+                </div>
+            </div> 
+            <a href="./contact page.html">Contact Us</a>
+            <a href="./report page.html">Report</a>
+        </div>
+    </nav>
+
+    <div class="title" id="firsttitle">
+        <h1>Programme</h1>
+    </div>
+    <section id="event-slide">
+    <h2 style="text-align: center;"> Upcoming Programmes</h2>
+    <div id="programmepage">
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="images/event1.jpg" class="imageslides" style="width: 100%" />
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="images/event2.jpg" class="imageslides" style="width: 100%" />
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="images/event3.jpg" class="imageslides" style="width: 100%" />
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br />
+
+    <!-- The dots/circles -->
+    <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    </div>
+    </section>
+    <div id="studentpage">
+        <div class="title">
+            <h1 id="programme">Student Programme</h1>
+        </div>
+        <div id="studpage1">
+        <div class="filterbutton">
+            <button class="button" onclick="return show('studpage2','studpage1');">2022/2023</button>
+            <button class="button" onclick="return show('studpage3','studpage1');">2023/2024</button>
+        </div>
+        <h2 class="year">2020/2021</h2>
+        <div class="studentcontent">
+            <img class="img-stud-prog" src="images/studprog1.png">
+            <div class="student-text">
+                <h2>Asma&#39s Pledge Drive</h2>
+                <h3>1st &#45 15th October 2020</h3>
+                <p>An online funrdraising to help out Zoo Negaras <br>management and 
+                    maintaning the well-being of animals.
+                </p>
+            </div>
+        </div>
+        <div class="studentcontent">
+            <div class="student-text">
+                <h2>Garage Sale</h2>
+                <h3>9th &#45 14th November 2020</h3>
+                <p>A mini platform provided for business transactions and <br>
+                to polish related generic skills of Mahallah Asma&#39s residents.
+                </p>
+            </div>
+            <img class="img-stud-prog" src="images/studprog2.jpeg">
+        </div>
+        <div class="studentcontent">
+            <img class="img-stud-prog" src="images/studprog5.jpg">
+            <div class="student-text">
+                <h2>Beautification of Mahallah Asma&#39</h2>
+                <h3>22th December 2020</h3>
+                <p>A programme to encourage residents of 
+                    Mahallah Asma&#39 in maintaning the cleanliness 
+                    and beautification of Mahallah&#39s washroom.
+                </p>
+            </div>
+        </div>
+        <div class="studentcontent">
+            <div class="student-text">
+                <h2>Asma&#39 Got Talent</h2>
+                <h3>19th- 25th May 2021</h3>
+                <p>This programme is the best platform for you to showcase and share your hidden “gems” with others. 
+                    The main objective of this event is to promote varieties of cultural 
+                    art through the performances of the residents.
+                </p>
+            </div>
+            <img class="img-stud-prog" src="images/studprog4.jpg">
+        </div>
+    </div>
+
+    <div id="studpage2" style="display:none">
+        <div class="filterbutton">
+            <button class="button" onclick="return show('studpage1','studpage2');">2020/2021</button>
+            <button class="button" onclick="return show('studpage3','studpage2');">2023/2024</button>
+        </div>
+        <h2 class="year">2022/2023</h2>
+        <div class="studentcontent">
+            <img class="img-stud-prog" src="images/studprog10.jpg">
+            <div class="student-text studentlong" id="studtxt1">
+                <h2>Let's Tadabbur 1.0</h2>
+                <h3>1 April 2022</h3>
+                <p>Tadabbur, the reflective pondering upon Quranic verses, is highly encouraged in Islam for a deeper understanding. 
+                    In light of the holy month of Ramadan, Ustaz Halil Ibrahim has been invited to share insights into Surah An-Nas, 
+                    a surah frequently recited during this period. The goal is to enhance comprehension and meaning when engaging with this verse.
+                </p>
+            </div>
+        </div>
+        <div class="studentcontent">
+            <img class="img-stud-prog" src="images/studprog11.jpg">
+            <div class="student-text studentlong">
+                <h2>Talk Nuzul Al-Quran</h2>
+                <h3>19 April 2022</h3>
+                <p>Explore the fascinating journey of how the Qur'an was revealed in stages 
+                    to Prophet Muhammad, culminating in the complete scripture we read today.
+                     Delve into the greatness and wonders of the Al-Quran, uncovering 
+                     its profound messages and wisdom. 
+                </p>
+            </div>
+        </div>
+        <div class="studentcontent ">
+            <img class="img-stud-prog" src="images/studprog12.jpg">
+            <div class="student-text studentlong">
+                <h2>Ramadhan Sharing 4.0</h2>
+                <h3>26 April 2022</h3>
+                <p>Sis Zahirah shared an insightful video discussing the countdown to the end of Ramadan. 
+                    The event emphasized the importance of utilizing the remaining 
+                    time in Ramadan to obtain Allah's forgiveness and reap the abundant rewards this 
+                    sacred month offers to every Muslim.
+                </p>
+            </div>
+        </div>
+        <div class="studentcontent ">
+            <img class="img-stud-prog" src="images/studprog13.jpg">
+            <div class="student-text studentlong">
+                <h2>Smar Al-Fatihah</h2>
+                <h3>21 May 2022</h3>
+                <p>The 'SMART AL FATIHAH' program, organized by the JKQ Club in collaboration with Mahallah Asma and 
+                    PERKIM, 
+                    successfully provided a platform for teaching the correct recitation and reflection (tadabbur) 
+                    of Surah Al-Fatihah. 
+                    The event aimed to enhance knowledge and proficiency in reciting this essential Quranic chapter. 
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="studpage3" style="display:none">
+        <div class="filterbutton">
+            <button class="button" onclick="return show('studpage1','studpage3');">2020/2021</button>
+            <button class="button" onclick="return show('studpage2','studpage3');">2022/2023</button>
+        </div>
+        <h2 class="year">2023/2024</h2>
+        <div class="studentcontent">
+            <img class="img-stud-prog" src="images/studprog6.jpg">
+            <div class="student-text studentlong">
+                <h2>Asma' Ihya' Ramadan 2023</h2>
+                <h3>8 April 2023</h3>
+                <p>his is an online talk organized by the Mahallah Asma' Representative Committee for 2022/2023, 
+                    in conjunction with the Islamic event of Nuzul Quran 2023 
+                    (the revelation of the Quran to Prophet Muhammad). 
+                    The aim is to celebrate the holy month of Ramadan through an 
+                    online session.
+                </p>
+            </div>
+        </div>
+        
+        <div class="studentcontent">
+            <img class="img-stud-prog" src="images/studprog9.jpg">
+            <div class="student-text studentlong">
+                <h2>Asma' Charity Sale</h2>
+                <h3>24, 31 March & 7, 14 April 2023</h3>
+                <p> MARC successfully organized the Asma' Charity Sale, where preloved clothes, 
+                    books, shoes, and more were sold at affordable prices. 
+                    The program, aimed at improving financial resources for upcoming initiatives
+                    , especially those assisting B40 and needy students, was a meaningful success. 
+                    Thank you for your participation and support in making a positive impact!
+                </p>
+            </div>
+        </div>
+        <div class="studentcontent">
+            <img class="img-stud-prog" src="images/studprog7.jpg">
+            <div class="student-text studentlong">
+                <h2>Asma' Ihya' Ramadan 2023</h2>
+                <h3>8th May - 15th May 2023</h3>
+                <p> This week-long event will feature a range of competitions, offering participants the chance to win exciting prizes. 
+                    Notably, the events will be divided by gender, allowing 
+                    participants to showcase their talents without any restrictions.
+                     Get ready to unleash your skills and participate in this 
+                     culturally enriching experience!
+                </p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div id="campaignpage">
+        <div class="title">
+            <h1 id="MahallahCamping">Mahallah Campaign</h1>
+        </div>
+        <div class="scroll-container" id="scrollable-image">
+            <img src="images/campaign1.jpg" alt="campaign 1" width="400" height="400">
+            <img src="images/campaign9.jpg" alt="campaign 1" width="400" height="400">
+            <img src="images/campaign10.jpg" alt="campaign 1" width="400" height="400">
+            <img src="images/campaign2.jpg" alt="campaign 2" width="400" height="400">
+            <img src="images/campaign7.jpg" alt="campaign 4" width="400" height="400">
+            <img src="images/campaign4.jpg" alt="campaign 4" width="400" height="400">
+            <img src="images/campaign3.jpg" alt="campaign 3" width="400" height="400">
+            <img src="images/campaign5.jpg" alt="campaign 4" width="400" height="400">
+            <img src="images/campaign6.jpg" alt="campaign 4" width="400" height="400">
+            <img src="images/campaign8.jpg" alt="campaign 4" width="400" height="400">
+          </div>
+    </div>
+
+    <div id="awardpage">
+        <div class="title">
+            <h1 id="Awards">Awards</h1>
+        </div>
+        <p class="awards-content" style="font-size: 20px;">
+            Mahallah Asma&#39 is well-known as an active Mahallah that never miss a
+            chance to participate in any competition or events.
+        </p>
+        <h2 id="awardlabel">List of Mahallah Asma&#39 Awards</h2>
+        <div id="accordion">
+            <h3 class="accordion-label">Asma&#39 Fundraising</h3>
+            <div id="awardsdiv">
+                <p>
+                    Asma&#39 fundraising is the most outstanding achievement, that successfully 
+                    reached more than half of thousand Malaysia Ringgit in a month. It was an excellent 
+                    programme organized by bureau Entrepreneurship with the help of MRC and BRC during IIUM Sports Carnival. 
+                    Massive supports were received from IIUM community along the process of fundraising. Not to forget, 
+                    Mahallah Asma&#39s residents were also very supportive and helpful.
+                </p>
+            </div>
+            <h3 class="accordion-label">&#145Tandas Bersih&#146 Challenge</h3>
+            <div>
+                <p>
+                    On early July 2020, Mahallah Asma&#39 took an 
+                    opportunity to participate in a programme organized by University Putra Malaysia (UPM) that is open to public. 
+                    The &#145Tandas Bersih&#146 challenge was an amazing experience for Mahallah Asma&#39
+                     to uncover the talent and uniqueness of Mahallah Asma&#39 in competing with several other great competitors.
+                </p>
+            </div>
+            <h3 class="accordion-label">Inter-Mahallah Cultural Week 2021</h3>
+            <div>
+                <p>
+                    Inter-Mahallah Cultural Week 2021 was an online competition among all masala in IIUM. 
+                    This competition was divided into 7 categories, i.e. tarannum, pantun, fashion show, traditional song, 
+                    nasyid, drama, and poetry recitation. Mahallah Asma&#39 took place in all categories except traditional song and 
+                    painting. Among all the categories that Asma&#39 took place, we managed 
+                    to get 3rd place in fashion show who was being participated in one of Asma&#39s residents, Sr, Aisyah Humaira.
+                </p>
+            </div>
+            <h3 class="accordion-label">Mental Health Corner</h3>
+            <div>
+                <p>
+                    Mental Health Corner during Mental health month and we got 4th place.
+                </p>
+            </div>
+            <h3 class="accordion-label">The most polite MRC</h3>
+            <div>
+                <p>
+                    Mahallah Asma&#39 were given the title of &#145The most polite MRC&#146 during the McLead programme though it 
+                    is an adventurous camping with many challenges in building leadership, teamwork , 
+                    explorace and outdoor activities. 
+                    MRC of Mahallah Asma&#39 actively participate with others during the programme.
+                </p>
+            </div>
+            <h3 class="accordion-label">Champion of Traditional Game</h3>
+            <div>
+                <p>
+                    Champion of Traditional Game: &#145Batu Seremban&#146 
+                    during IIUM Indigenous Festival. 
+                    It was particpated by residents of Mahallah Asma&#39 and competed with other Mahallahs
+                </p>
+            </div>
+        </div>
+    </div>
+
+   
+    <footer id="page-footer">
+        <p>SOCIAL MEDIA</p>
+        <img src="images/ig logo.png" width="40" height="30" class="footer image">
+        <img src="images/x logo.png" width="40" height="30" class="footer image">
+        <p>copyright&copy; 2023 Mahallah Asma</p>
+    </footer>
+
+    <script>
+        // JavaScript to toggle the visibility of the footer when scrolling to the bottom
+        window.addEventListener('scroll', function () {
+            var scrollPosition = window.scrollY + window.innerHeight;
+            var pageHeight = document.documentElement.scrollHeight;
+
+            if (scrollPosition >= pageHeight - 10) {
+                document.getElementById('page-footer').style.display = 'block';
+            } else {
+                document.getElementById('page-footer').style.display = 'none';
+            }
+        });
+    </script>
+    
+
+    <script src="programme.js"></script>
+</body>
+
+</html>
